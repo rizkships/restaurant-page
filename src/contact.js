@@ -4,3 +4,4 @@ export function createContact() {
     // Add additional styling if needed
     return contact;
 }
+
