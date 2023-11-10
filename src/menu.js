@@ -4,3 +4,4 @@ export function createMenu() {
     // Add additional styling if needed
     return menu;
 }
+
