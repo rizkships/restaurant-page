@@ -1,7 +1,14 @@
-export function createMenu() {
-    const menu = document.createElement('div');
-    menu.textContent = 'Menu content goes here.';
-    // Add additional styling if needed
-    return menu;
-}
+// menu.js
 
+export function loadMenuPage() {
+    const contentDiv = document.getElementById('content');
+  
+    // Create and append elements for the menu page
+    const menuSection = document.createElement('div');
+    menuSection.textContent = 'This is the Menu Page';
+  
+    // Clear existing content and append menu page
+    contentDiv.innerHTML = '';
+    contentDiv.appendChild(menuSection);
+  }
+  
