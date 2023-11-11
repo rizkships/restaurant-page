@@ -1,21 +1,26 @@
-import "./styles.css";
+import { loadHomePage } from './homepage';
+import { loadMenuPage } from './menu';
+import { loadContactPage } from './contact';
 
-import { createHeader } from './header.js';
-import { createHome } from './home.js';
-import { createMenu } from './menu.js';
-import { createContact } from './contact.js';
+// Initial page load
+document.addEventListener('DOMContentLoaded', () => {
+  loadHomePage();
+});
 
-console.log("JavaScript is running!");
-// ... rest of your code
+// Tab switching logic
+const homeTab = document.querySelector('a[href="#home"]');
+const menuTab = document.querySelector('a[href="#menu"]');
+const contactTab = document.querySelector('a[href="#contact"]');
 
+homeTab.addEventListener('click', () => {
+  loadHomePage();
+});
 
-const contentContainer = document.getElementById('content');
+menuTab.addEventListener('click', () => {
+  loadMenuPage();
+});
 
-function loadContent(module) {
-    // Clear existing content
-    contentContainer.innerHTML = '';
-    // Append new content
-    contentContainer.appendChild(module());
-}
+contactTab.addEventListener('click', () => {
+  loadContactPage();
+});
 
-document.getElementById('homeTab').addEventListener('click')
