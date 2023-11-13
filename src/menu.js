@@ -1,5 +1,8 @@
 // menu.js
 
+//import './styles.css';
+
+
 export function loadMenuPage() {
     const contentDiv = document.getElementById('content');
   

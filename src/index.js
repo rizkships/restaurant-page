@@ -1,6 +1,8 @@
-import { loadHomePage } from './homepage';
-import { loadMenuPage } from './menu';
-import { loadContactPage } from './contact';
+import { loadHomePage } from '../src/home.js';
+import { loadMenuPage } from './menu.js';
+import { loadContactPage } from './contact.js';
+ // import './styles.css';
+
 
 // Initial page load
 document.addEventListener('DOMContentLoaded', () => {
@@ -24,3 +26,4 @@ contactTab.addEventListener('click', () => {
   loadContactPage();
 });
 
+console.log('tiz workin')

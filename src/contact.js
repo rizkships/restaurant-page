@@ -1,4 +1,6 @@
 // contact.js
+//import './styles.css';
+
 
 export function loadContactPage() {
     const contentDiv = document.getElementById('content');

@@ -1,4 +1,5 @@
 // homepage.js
+//import './styles.css'
 
 export function loadHomePage() {
     const contentDiv = document.getElementById('content');
@@ -14,7 +15,7 @@ export function loadHomePage() {
     logoDiv.classList.add('ml-5');
   
     const logoSpan = document.createElement('span');
-    logoSpan.classList.add('font-extrabold', 'text-black');
+    logoSpan.classList.add('font-extrabold', 'text-green');
     logoSpan.textContent = 'Nutri';
   
     logoDiv.appendChild(logoSpan);
