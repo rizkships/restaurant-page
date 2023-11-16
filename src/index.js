@@ -1,7 +1,7 @@
 import { loadHomePage } from '../src/home.js';
 import { loadMenuPage } from './menu.js';
 import { loadContactPage } from './contact.js';
- // import './styles.css';
+//import '../src/styles.css';
 
 
 // Initial page load
