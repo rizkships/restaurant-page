@@ -1,4 +1,4 @@
-// homepage.js
+// home.js
 //import './styles.css'
 
 
@@ -36,6 +36,7 @@ export function loadHomePage() {
       const listItem = document.createElement('li');
       listItem.classList.add('text-black', 'hover:text-[#16a34a]', 'cursor-pointer');
       const anchor = document.createElement('a');
+      anchor.setAttribute('href', `#${item.toLowerCase()}`)
       anchor.textContent = item;
       listItem.appendChild(anchor);
       menuList.appendChild(listItem);

@@ -10,19 +10,50 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Tab switching logic
+const tabs = {
+    home: loadHomePage,
+    menu: loadMenuPage,
+    contact: loadContactPage,
+  };
+
+  let currentPage = 'home';
+
+
+  function navigateTo(page) {
+    if (currentPage !== page) {
+      tabs[page]();
+      currentPage = page;
+    }
+  }
+
+  document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (target.tagName === 'A' && target.getAttribute('href')) {
+      const page = target.getAttribute('href').substring(1); // Remove the '#' character
+      navigateTo(page);
+    }
+  });
+
+/*
 const homeTab = document.querySelector('a[href="#home"]');
 const menuTab = document.querySelector('a[href="#menu"]');
 const contactTab = document.querySelector('a[href="#contact"]');
-let currentPage = 'home';
+*/
 
 
+
+
+
+
+  /*
 homeTab.addEventListener('click', () => {
     if (currentPage !== 'home') {
       loadHomePage();
       currentPage = 'home';
     }
-  });
+  }); */
 
+  /*
   menuTab.addEventListener('click', () => {
     if (currentPage !== 'menu') {
       loadMenuPage();
@@ -39,3 +70,4 @@ homeTab.addEventListener('click', () => {
   });
 
 console.log('tiz workin')
+*/
