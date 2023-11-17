@@ -12,6 +12,8 @@ export function loadContactPage() {
     // Clear existing content and append contact page
     contentDiv.innerHTML = '';
     contentDiv.appendChild(contactSection);
+
+   // loadNavigationMenu(); 
   }
   
 

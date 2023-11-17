@@ -1,12 +1,41 @@
+//index.js 
 import { loadHomePage } from '../src/home.js';
 import { loadMenuPage } from './menu.js';
 import { loadContactPage } from './contact.js';
+
 //import '../src/styles.css';
 
+/* function loadNavigationMenu() {
+    const contentDiv = document.getElementById('content');
+  
+    const navigationDiv = document.createElement('div');
+    navigationDiv.classList.add('navigation-menu');
+  
+    const menuItems = ['Home', 'Menu', 'About Us', 'Contact'];
+  
+    const menuList = document.createElement('ul');
+    menuList.classList.add('flex', 'items-center', 'gap-[4vw]', 'text-black');
+  
+    menuItems.forEach((item) => {
+      const listItem = document.createElement('li');
+      listItem.classList.add('text-black', 'hover:text-[#16a34a]', 'cursor-pointer');
+      const anchor = document.createElement('a');
+      anchor.setAttribute('href', `#${item.toLowerCase().replace(' ', '-')}`);
+      anchor.textContent = item;
+      listItem.appendChild(anchor);
+      menuList.appendChild(listItem);
+    });
+  
+    navigationDiv.appendChild(menuList);
+    
+   
+    contentDiv.appendChild(navigationDiv);
+  } */
 
 // Initial page load
 document.addEventListener('DOMContentLoaded', () => {
-  loadHomePage();
+  loadHomePage(); 
+ // loadNavigationMenu(); // not defined
 });
 
 // Tab switching logic
@@ -21,8 +50,9 @@ const tabs = {
 
   function navigateTo(page) {
     if (currentPage !== page) {
-      tabs[page]();
+      tabs[page](); // error?
       currentPage = page;
+    //  loadNavigationMenu();
     }
   }
 
@@ -30,10 +60,12 @@ const tabs = {
     const target = event.target;
     if (target.tagName === 'A' && target.getAttribute('href')) {
       const page = target.getAttribute('href').substring(1); // Remove the '#' character
-      navigateTo(page);
+      navigateTo(page); // error?
     }
   });
 
+  
+  
 /*
 const homeTab = document.querySelector('a[href="#home"]');
 const menuTab = document.querySelector('a[href="#menu"]');

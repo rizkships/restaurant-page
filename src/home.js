@@ -3,7 +3,6 @@
 
 
 
-
 export function loadHomePage() {
     const contentDiv = document.getElementById('content');
   
@@ -99,6 +98,9 @@ export function loadHomePage() {
     // Append to the content div
     contentDiv.appendChild(header);
     contentDiv.appendChild(heroSection);
+
+      // Load the navigation menu at the end
+  //loadNavigationMenu();  // not defined
   }
   
 
