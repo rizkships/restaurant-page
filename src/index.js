@@ -13,17 +13,29 @@ document.addEventListener('DOMContentLoaded', () => {
 const homeTab = document.querySelector('a[href="#home"]');
 const menuTab = document.querySelector('a[href="#menu"]');
 const contactTab = document.querySelector('a[href="#contact"]');
+let currentPage = 'home';
+
 
 homeTab.addEventListener('click', () => {
-  loadHomePage();
-});
+    if (currentPage !== 'home') {
+      loadHomePage();
+      currentPage = 'home';
+    }
+  });
 
-menuTab.addEventListener('click', () => {
-  loadMenuPage();
-});
+  menuTab.addEventListener('click', () => {
+    if (currentPage !== 'menu') {
+      loadMenuPage();
+      currentPage = 'menu';
+    }
+  });
+  
 
-contactTab.addEventListener('click', () => {
-  loadContactPage();
-});
+  contactTab.addEventListener('click', () => {
+    if (currentPage !== 'contact') {
+      loadContactPage();
+      currentPage = 'contact';
+    }
+  });
 
 console.log('tiz workin')

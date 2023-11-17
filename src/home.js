@@ -1,6 +1,9 @@
 // homepage.js
 //import './styles.css'
 
+
+
+
 export function loadHomePage() {
     const contentDiv = document.getElementById('content');
   
