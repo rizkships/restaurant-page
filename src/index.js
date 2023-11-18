@@ -1,4 +1,45 @@
 //index.js 
+
+import pageLoad from './pageLoad';
+
+pageLoad()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 import { loadHomePage } from '../src/home.js';
 import { loadMenuPage } from './menu.js';
 import { loadContactPage } from './contact.js';
@@ -31,7 +72,7 @@ import { loadContactPage } from './contact.js';
    
     contentDiv.appendChild(navigationDiv);
   } */
-
+/*
 // Initial page load
 document.addEventListener('DOMContentLoaded', () => {
   loadHomePage(); 
