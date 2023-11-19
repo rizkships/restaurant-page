@@ -1,4 +1,6 @@
-import createRestaurantHomePage from "./restaurant";
+import createContactPage from "./contact.js";
+import createMenuPage from "./menu.js";
+import createRestaurantHomePage from "./restaurant.js";
 
 const createTabs = () => {
     const content = document.querySelector('#content');
@@ -26,14 +28,26 @@ const createTabs = () => {
     content.appendChild(div3);
 
     div1.addEventListener('click', () => {
+        clearContent();
         createRestaurantHomePage();
     })
     div2.addEventListener('click', () => {
+        clearContent();
         createMenuPage();
     })
     div3.addEventListener('click', () => {
+        clearContent();
         createContactPage();
     })
+
+}
+
+function clearContent() {
+    const content = document.querySelector('#content');
+    const pageContent = document.querySelector('.page-content')
+    if (pageContent) {
+        content.removeChild(pageContent);
+    }
 
 }
 

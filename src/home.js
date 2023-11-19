@@ -1,6 +1,6 @@
 // home.js
 //import './styles.css'
-
+/*
 function createHeaderAndMenu() {
     const header = document.createElement('header');
     header.classList.add('w-full', 'mt-5');

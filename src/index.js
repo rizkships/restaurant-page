@@ -1,8 +1,13 @@
 //index.js 
 
-import pageLoad from './pageLoad';
+// import pageLoad from './pageLoad';
+//pageLoad()
 
-pageLoad()
+import initialLoad from './pageLoad.js';
+
+initialLoad()
+
+
 
 
 

@@ -17,7 +17,10 @@ const createRestaurantHomePage = () => {
 
     const copy = document.createElement('p');
     copy.textContent = "Satisfy your cravings with our app's pure and high-quality food options. Order now for a delicious and healthy meal."
-    pageContent.appendChild(pageContent)
+    pageContent.appendChild(copy)
+    content.appendChild(pageContent)
 
 
 }
+
+export default createRestaurantHomePage;

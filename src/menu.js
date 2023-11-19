@@ -17,10 +17,9 @@ menuList.appendChild(menuItem1)
 pageContent.appendChild(heading);
 pageContent.appendChild(menuList);
 content.appendChild(pageContent);
-
 }
 
-export default createMenuPage
+export default createMenuPage;
 
 
 
